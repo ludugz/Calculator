@@ -1,0 +1,4 @@
+#Mon Jan 01 13:24:33 ICT 2018
+base.0=C\:\\Users\\admin\\Desktop\\Android\\Calculator\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+renamed.0=classes.dex
+file.0=C\:\\Users\\admin\\Desktop\\Android\\Calculator\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

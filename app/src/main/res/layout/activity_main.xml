@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/edit_text"
+            android:shadowColor="#cdcd31"
+            android:textColorHint="#4e4cbb"
+            android:hint="What's your name"
+            android:layout_margin="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_margin="15sp"
+            style="@style/HeaderTextStyle"
+            android:text="TOPPINGS"
+        />
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Ice-cream"
+            android:textSize="20sp" />
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Chocolate"
+            android:textSize="20sp" />
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:id="@+id/quantity"
+            android:layout_margin="15dp"
+            android:text="QUANTITY"></TextView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/gia_quantity"
+                android:onClick="increase"
+                android:text="+"
+                android:textSize="30sp" />
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:onClick="decrease"
+                android:text="-"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/gia_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_toRightOf="@+id/button3"
+                android:text="0"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/price"
+            style="@style/HeaderTextStyle"
+            android:layout_margin="20dp"
+            android:text="Price"
+            />
+
+        <TextView
+            android:id="@+id/gia_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="0"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:onClick="composeEmail"
+            android:text="Order"
+
+            />
+    </LinearLayout>
+</ScrollView>
